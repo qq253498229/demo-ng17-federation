@@ -1,16 +1,15 @@
 import { APP_INITIALIZER, ApplicationConfig, importProvidersFrom, isDevMode } from '@angular/core';
 import { PluginService } from './modules/plugins/plugin.service';
-import { RouterModule } from '@angular/router';
+import { provideRouter, withEnabledBlockingInitialNavigation } from '@angular/router';
 import { NgxsRouterPluginModule, RouterStateSerializer } from '@ngxs/router-plugin';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 import { NgxsFormPluginModule } from '@ngxs/form-plugin';
-import { SystemState } from './store/system/system.state';
-import { CustomRouterStateSerializer } from './store/router/custom-router-state-serializer';
+import { CustomRouterStateSerializer, SystemState } from '@shared';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    importProvidersFrom(RouterModule.forRoot([])),
+    provideRouter([], withEnabledBlockingInitialNavigation()),
     {provide: RouterStateSerializer, useClass: CustomRouterStateSerializer},
     {
       provide: APP_INITIALIZER,

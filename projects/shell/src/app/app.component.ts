@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Store } from '@ngxs/store';
-import { SystemSelector } from './store/system/system.selector';
-import { SystemAction } from './store/system/system.action';
+import { SystemAction, SystemSelector } from '@shared';
+import { AutoUnsubscribe } from 'ngx-auto-unsubscribe-decorator';
 
 @Component({
   selector: 'app-root',
@@ -18,10 +18,11 @@ import { SystemAction } from './store/system/system.action';
   styles: [],
 })
 export class AppComponent {
+  @AutoUnsubscribe() messages$ = this.store.select(SystemSelector.messages);
 
   constructor(private store: Store) {
-    this.store.select(SystemSelector.messages).subscribe(r => {
-      console.log('app message', r);
+    this.messages$.subscribe(r => {
+      console.log('shell app message', r);
     });
   }
 

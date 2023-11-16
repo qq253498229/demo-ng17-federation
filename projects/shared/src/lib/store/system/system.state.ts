@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Action, NgxsAfterBootstrap, State, StateContext } from '@ngxs/store';
 import { SystemAction } from './system.action';
 import * as immutable from 'object-path-immutable';
-import { uuid } from '../../modules/utils/utils';
+import { uuid } from '../../utils/utils';
 
 export interface SystemStateModel {
   messages: {

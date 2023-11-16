@@ -61,7 +61,11 @@
             "scripts": [],
             "main": "projects/shell/src/main.ts",
             "extraWebpackConfig": "projects/shell/webpack.config.js",
-            "commonChunk": false
+            "commonChunk": false,
+            "allowedCommonJsDependencies": [
+              "object-path",
+              "ngx-auto-unsubscribe-decorator"
+            ]
           },
           "configurations": {
             "production": {
@@ -220,6 +224,39 @@
           "options": {
             "buildTarget": "app-user:build",
             "extraWebpackConfig": "projects/app-user/webpack.config.js"
+          }
+        }
+      }
+    },
+    "shared": {
+      "projectType": "library",
+      "root": "projects/shared",
+      "sourceRoot": "projects/shared/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/shared/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/shared/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/shared/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/shared/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }
