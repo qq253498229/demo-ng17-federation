@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:shell": "ng serve shell",
     "start:user": "ng serve app-user",
+    "build": "ng build",
     "build:shared": "ng build shared",
     "build:shell": "ng build shell",
     "build:user": "ng build app-user",

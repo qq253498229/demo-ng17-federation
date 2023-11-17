@@ -1,0 +1,19 @@
+{
+  "name": "nwjs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start:nw": "nw",
+    "build:osx64": "node build.mjs --platform=osx64",
+    "build:win64": "node build.mjs --platform=win64"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1",
+    "nw": "^0.82.0-sdk",
+    "nw-builder": "^4.4.2-beta.4",
+    "yarn-lock-tool": "^1.0.1"
+  },
+  "main": "main.js",
+  "node-remote": "*://*",
+  "bg-script": "dev-bgscript.js"
+}

@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/nwjs/node_modules/
+/nwjs/cache/
+/nwjs/build/
+/nwjs/temp/
+/nwjs/out/

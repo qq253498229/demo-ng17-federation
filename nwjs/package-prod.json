@@ -1,0 +1,10 @@
+{
+  "name": "备份工具",
+  "main": "index.html",
+  "bg-script": "build-bgscript.js",
+  "window": {
+    "width": 600,
+    "height": 900,
+    "icon": "tray.png"
+  }
+}
