@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, isDevMode } from '@angular/core';
 import { Router, Routes } from '@angular/router';
 import { ListComponent } from './list/list.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
@@ -20,7 +20,7 @@ export class PluginService {
           path: 'plugin/user',
           loadChildren: () => loadRemoteModule({
             type: 'module',
-            remoteEntry: 'http://localhost:4201/remoteEntry.js',
+            remoteEntry: isDevMode() ? 'http://localhost:4201/remoteEntry.js' : '/assets/user/remoteEntry.js',
             exposedModule: './routes',
           }).then(m => m.routes),
         },

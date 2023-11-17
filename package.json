@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:shell": "ng serve shell",
+    "start:user": "ng serve app-user",
+    "build:shared": "ng build shared",
+    "build:shell": "ng build shell",
+    "build:user": "ng build app-user",
     "watch": "ng build --watch --configuration development",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
