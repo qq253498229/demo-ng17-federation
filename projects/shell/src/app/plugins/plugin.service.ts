@@ -8,6 +8,7 @@ import { PluginLayoutComponent } from './plugin-layout/plugin-layout.component';
 import { PluginListComponent } from './plugin-list/plugin-list.component';
 import { PluginLoadedComponent } from './plugin-loaded/plugin-loaded.component';
 import { PluginCustomComponent } from './plugin-custom/plugin-custom.component';
+import { HomeComponent } from '../common/home/home.component';
 
 @Injectable({
   providedIn: 'root',
@@ -50,7 +51,8 @@ export class PluginService {
     });
 
     const routes: Routes = [
-      {path: '', redirectTo: '/manage', pathMatch: 'full'},
+      {path: '', redirectTo: '/home', pathMatch: 'full'},
+      {path: 'home', component: HomeComponent},
       {
         path: 'manage', children: [
           {path: '', redirectTo: 'list', pathMatch: 'full'},
