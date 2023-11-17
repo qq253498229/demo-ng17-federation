@@ -1,0 +1,24 @@
+[
+  {
+    "path": "user",
+    "desc": "用户管理",
+    "exposedModule": "./routes",
+    "moduleName": "routes",
+    "remoteEntry": "/assets/user/remoteEntry.js",
+    "remoteEntryDev": "http://localhost:4201/remoteEntry.js",
+    "lazy": false,
+    "menu": [
+      {
+        "position": "new",
+        "name": "用户",
+        "icon": "user",
+        "children": [
+          {
+            "path": "/plugin/user/list",
+            "name": "列表"
+          }
+        ]
+      }
+    ]
+  }
+]

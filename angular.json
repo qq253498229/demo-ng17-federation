@@ -53,9 +53,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/shell/src/favicon.ico",
-              "projects/shell/src/assets"
+              "projects/shell/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "projects/shell/src/theme.less",
               "projects/shell/src/styles.scss"
             ],
             "scripts": [],
@@ -64,7 +70,8 @@
             "commonChunk": false,
             "allowedCommonJsDependencies": [
               "object-path",
-              "ngx-auto-unsubscribe-decorator"
+              "ngx-auto-unsubscribe-decorator",
+              "lodash"
             ]
           },
           "configurations": {
@@ -72,8 +79,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",

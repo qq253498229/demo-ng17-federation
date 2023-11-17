@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-list',
+  selector: 'app-not-found',
   standalone: true,
   imports: [CommonModule],
   template: `
       <p>
-          plugin list works!
+          not-found works!
       </p>
   `,
   styles: ``,
 })
-export class ListComponent {
+export class NotFoundComponent {
 
 }

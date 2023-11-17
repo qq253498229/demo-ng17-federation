@@ -147,6 +147,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@^17.0.0":
+  version "17.0.1"
+  resolved "https://registry.npmmirror.com/@angular/cdk/-/cdk-17.0.1.tgz#f1852c79ed0c34ef5f76014c048d1184174b5b50"
+  integrity sha512-0hrXm2D0s0/vUtDoLFRWTs75k5WY/hQmfnsaJXHeqinbE3eKOxmQxL1i7ymnMSQthEWzgRAhzS3Nfs7Alw3dQA==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^7.1.2"
+
 "@angular/cli@^17.0.0":
   version "17.0.0"
   resolved "https://registry.npmmirror.com/@angular/cli/-/cli-17.0.0.tgz#1f966d1b79e716920d624a6e86596f702cec36fe"
@@ -233,6 +242,21 @@
   integrity sha512-A1Ulv4qBAtJyK5g1yBlK1qZHe+KaaL5vMPAaPWUxICH8lHEodDkJlbYAUI2e4VL2BN7zBmdOep6tlBKPmHY3mw==
   dependencies:
     tslib "^2.3.0"
+
+"@ant-design/colors@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.npmmirror.com/@ant-design/colors/-/colors-7.0.0.tgz#eb7eecead124c3533aea05d61254f0a17f2b61b3"
+  integrity sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==
+  dependencies:
+    "@ctrl/tinycolor" "^3.4.0"
+
+"@ant-design/icons-angular@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.npmmirror.com/@ant-design/icons-angular/-/icons-angular-16.0.0.tgz#32a80e66cfc85e1bcfed232498251aeb8e524e4a"
+  integrity sha512-KWBmWZl2so49R/MdAT7aG+xaBlMKl9SArR3Du/iPA0Am9GI1i9R89KgnnLWz+gkzHTye15S1IBXpgts4GPPU/w==
+  dependencies:
+    "@ant-design/colors" "^7.0.0"
+    tslib "^2.0.0"
 
 "@assemblyscript/loader@^0.10.1":
   version "0.10.1"
@@ -1184,7 +1208,7 @@
   resolved "https://registry.npmmirror.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@7.23.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@7.23.2", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4":
   version "7.23.2"
   resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.23.2.tgz#062b0ac103261d68a966c4c7baf2ae3e62ec3885"
   integrity sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==
@@ -1224,6 +1248,11 @@
     "@babel/helper-string-parser" "^7.22.5"
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
+
+"@ctrl/tinycolor@^3.4.0":
+  version "3.6.1"
+  resolved "https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz#b6c75a56a1947cc916ea058772d666a2c8932f31"
+  integrity sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==
 
 "@discoveryjs/json-ext@0.5.7":
   version "0.5.7"
@@ -1900,6 +1929,11 @@
   version "7.0.15"
   resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
+
+"@types/lodash@^4.14.201":
+  version "4.14.201"
+  resolved "https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.201.tgz#76f47cb63124e806824b6c18463daf3e1d480239"
+  integrity sha512-y9euML0cim1JrykNxADLfaG0FgD1g/yTHwUs/Jg9ZIU7WKj2/4IW9Lbb1WZbvck78W/lfGXFfe+u2EGfIJXdLQ==
 
 "@types/mime@*":
   version "3.0.4"
@@ -2959,6 +2993,13 @@ cuint@^0.2.2:
   version "0.2.2"
   resolved "https://registry.npmmirror.com/cuint/-/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
   integrity sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==
+
+date-fns@^2.16.1:
+  version "2.30.0"
+  resolved "https://registry.npmmirror.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 debug@2.6.9, debug@^2.2.0:
   version "2.6.9"
@@ -4758,6 +4799,16 @@ ng-packagr@^17.0.0:
   optionalDependencies:
     esbuild "^0.19.0"
 
+ng-zorro-antd@17.0.0-beta.0:
+  version "17.0.0-beta.0"
+  resolved "https://registry.npmmirror.com/ng-zorro-antd/-/ng-zorro-antd-17.0.0-beta.0.tgz#b0ff3ee24f22658a78b386ed4f5264fecb59374f"
+  integrity sha512-VPIXFKX/CpjLOLsdsGVoibRb+DRp1L71wJpbJy+D4fVHU/mOQl3wrFd6b/NKCjPWu0pRXO1KG0Np2JRjiSJI2w==
+  dependencies:
+    "@angular/cdk" "^17.0.0"
+    "@ant-design/icons-angular" "^16.0.0"
+    date-fns "^2.16.1"
+    tslib "^2.3.0"
+
 ngx-auto-unsubscribe-decorator@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/ngx-auto-unsubscribe-decorator/-/ngx-auto-unsubscribe-decorator-1.1.0.tgz#4d7b795805857956b9ee2071e61dc34e59437c8b"
@@ -5142,7 +5193,7 @@ parse5-sax-parser@^7.0.0:
   dependencies:
     parse5 "^7.0.0"
 
-parse5@^7.0.0:
+parse5@^7.0.0, parse5@^7.1.2:
   version "7.1.2"
   resolved "https://registry.npmmirror.com/parse5/-/parse5-7.1.2.tgz#0736bebbfd77793823240a23b7fc5e010b7f8e32"
   integrity sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==
